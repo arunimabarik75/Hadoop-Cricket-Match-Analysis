@@ -1,4 +1,4 @@
-package total_runs;
+package total_runs_team_wise;
 
 import org.apache.hadoop.conf.*;
 import org.apache.hadoop.fs.*;
