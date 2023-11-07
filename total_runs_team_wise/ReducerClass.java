@@ -1,4 +1,4 @@
-package total_runs_team_wise;
+package total_runs;
 
 import org.apache.hadoop.mapreduce.*;
 import java.io.IOException;
