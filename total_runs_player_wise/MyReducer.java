@@ -1,21 +1,22 @@
-package total_runs_team_wise;
-
+package proC2;
 import org.apache.hadoop.mapreduce.*;
-import java.io.IOException;
-import org.apache.hadoop.io.*;
 
-public class ReducerClass extends Reducer<Text,IntWritable,Text,IntWritable>{
+import java.io.IOException;
+
+import org.apache.hadoop.io.*;
+public class MyReducer extends Reducer<Text,IntWritable,Text,IntWritable>{
 	@Override
-	protected void reduce(Text key, Iterable<IntWritable> values,
+	protected void reduce(Text key, Iterable<IntWritable> value,
 			Reducer<Text, IntWritable, Text, IntWritable>.Context op) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		int sum =0;
-		for(IntWritable data : values) {
+		for(IntWritable data : value) {
 			int b = data.get();
 			sum = sum + b;
 		}
 		Text key1 = key;
-		IntWritable ov = new IntWritable(sum);
-		op.write(key1, ov);
+		IntWritable oa = new IntWritable(sum);
+		op.write(key1, oa);
 	}
+
 }
