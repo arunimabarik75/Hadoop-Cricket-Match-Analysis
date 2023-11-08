@@ -42,6 +42,7 @@ public class ReducerClass extends Reducer<Text,Text,Text,Text>{
 				++b;
 			}
 		}
+		
 		String ss ="";
 		int t =0;
 		for(int i =0 ;i<a;++i) {
