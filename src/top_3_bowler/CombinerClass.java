@@ -13,8 +13,9 @@ public class CombinerClass extends Reducer<Text,Text,Text,Text>{
 		for(Text data : value) {
 			String v = data.toString();
 			int a = Integer.parseInt(v);
-			sum = sum + a;
+			sum = sum + a; 
 		}
+		
 		Text oa = new Text("wicket");
 		String k = key.toString();
 		String ss = Integer.toString(sum);
