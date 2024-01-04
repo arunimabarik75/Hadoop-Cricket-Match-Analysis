@@ -1,4 +1,4 @@
-# Hadoop_Cricket_Match_Analysis
+# Hadoop Cricket Match Analysis
 
 This repository contains code to perform Cricket Match Analysis using Apache Hadoop.
 
